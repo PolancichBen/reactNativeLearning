@@ -1,6 +1,5 @@
 import React from "react";
 import { Text, View, StyleSheet, Button, Image } from "react-native";
-const pizza = require('./pizza.jpg')
 
 const ImagesComponent = ({navigation}) => {
   return (

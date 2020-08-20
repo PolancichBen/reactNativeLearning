@@ -20,6 +20,12 @@ const HomeScreen = ({navigation}) => {
       title="Go to Images"
       onPress={()=> navigation.navigate('Images')}
       />
+      <Separator />
+      <Button 
+      style={styles.btn}
+      title="Go to Image Background"
+      onPress={()=> navigation.navigate('ImageBack')}
+      />
     </View>
   )
 };
