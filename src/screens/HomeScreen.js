@@ -1,8 +1,16 @@
 import React from "react";
-import { Text, StyleSheet } from "react-native";
+import { Text, View, StyleSheet, Button } from "react-native";
 
-const HomeScreen = () => {
-  return <Text style={styles.text}>Hello World</Text>;
+const HomeScreen = ({navigation}) => {
+  return (
+    <View>
+      <Text style={styles.text}>Hello World</Text>
+      <Button 
+      title="Go to Lists"
+      onPress={()=> navigation.navigate('List')}
+      />
+    </View>
+  )
 };
 
 const styles = StyleSheet.create({
