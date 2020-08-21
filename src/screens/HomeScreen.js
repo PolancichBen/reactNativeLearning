@@ -8,7 +8,7 @@ const Separator = () => (
 const HomeScreen = ({navigation}) => {
   return (
     <View>
-      <Text style={styles.text}>Hello World</Text>
+      <Text style={styles.text}>React Native Components</Text>
       <Button
       style={styles.btn}
       title="Go to Lists"
@@ -50,13 +50,21 @@ const HomeScreen = ({navigation}) => {
       title="Go to Scrollable"
       onPress={()=> navigation.navigate('Scroll')}
       />
+      <Separator />
+      <Button
+      style={styles.btn}
+      title="Go to Status Bars"
+      onPress={()=> navigation.navigate('Status')}
+      />
     </View>
   )
 };
 
 const styles = StyleSheet.create({
   text: {
-    fontSize: 30
+    fontSize: 30,
+    textAlign: 'center',
+    marginVertical: 10
   },
   separator: {
     marginVertical: 8,
