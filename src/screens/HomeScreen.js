@@ -8,7 +8,7 @@ const Separator = () => (
 const HomeScreen = ({navigation}) => {
   return (
     <View>
-      <Text style={styles.text}>React Native Components</Text>
+      <Text style={styles.text}>Select a Component</Text>
       <Button
       style={styles.btn}
       title="Go to Lists"
