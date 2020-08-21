@@ -38,6 +38,18 @@ const HomeScreen = ({navigation}) => {
       title="Go to Pressable"
       onPress={()=> navigation.navigate('PressableComp')}
       />
+      <Separator />
+      <Button
+      style={styles.btn}
+      title="Go to Refresher"
+      onPress={()=> navigation.navigate('Refresh')}
+      />
+      <Separator />
+      <Button
+      style={styles.btn}
+      title="Go to Scrollable"
+      onPress={()=> navigation.navigate('Scroll')}
+      />
     </View>
   )
 };

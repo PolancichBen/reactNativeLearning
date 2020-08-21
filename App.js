@@ -6,6 +6,8 @@ import ImagesComponent from './src/screens/images';
 import ImagesBackground from './src/screens/imageBackground';
 import Modals from './src/screens/modals';
 import PressableComponent from './src/screens/pressable.js';
+import Refresher from './src/screens/refresher';
+import ScrollComp from './src/screens/scrollable'
 
 const navigator = createStackNavigator(
   {
@@ -15,6 +17,8 @@ const navigator = createStackNavigator(
     ImageBack: ImagesBackground,
     Modal: Modals,
     PressableComp: PressableComponent,
+    Refresh: Refresher,
+    Scroll: ScrollComp,
   },
   {
     initialRouteName: "Home",
