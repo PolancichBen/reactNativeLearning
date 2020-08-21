@@ -32,6 +32,12 @@ const HomeScreen = ({navigation}) => {
       title="Go to Modals"
       onPress={()=> navigation.navigate('Modal')}
       />
+      <Separator />
+      <Button
+      style={styles.btn}
+      title="Go to Pressable"
+      onPress={()=> navigation.navigate('PressableComp')}
+      />
     </View>
   )
 };

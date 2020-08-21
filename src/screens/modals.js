@@ -5,13 +5,19 @@ import {
   StyleSheet,
   Text,
   TouchableHighlight,
-  View
+  View,
+  Button
 } from "react-native";
 
 const Modals = ({navigation}) => {
   const [modalVisible,setModalVisible]= useState(false);
   return (
       <View style={styles.centeredView}>
+        <Button 
+        title="Head back home"
+        style={styles.sep}
+        onPress={()=>navigation.navigate('Home')}
+        />
         <Modal
           animationType="slide"
           transparent={true}
@@ -55,6 +61,9 @@ const Modals = ({navigation}) => {
       alignItems: "center",
       marginTop: 22
     },
+    sep: {
+      marginVertical:8
+    },
     modalView: {
       margin: 20,
       backgroundColor: "white",
@@ -74,12 +83,13 @@ const Modals = ({navigation}) => {
       backgroundColor: "#F194FF",
       borderRadius: 20,
       padding: 10,
-      elevation: 2
+      elevation: 2,
+      marginVertical: 20
     },
     textStyle: {
       color: "white",
       fontWeight: "bold",
-      textAlign: "center"
+      textAlign: "center",
     },
     modalText: {
       marginBottom: 15,
