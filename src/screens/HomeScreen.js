@@ -26,6 +26,12 @@ const HomeScreen = ({navigation}) => {
       title="Go to Image Background"
       onPress={()=> navigation.navigate('ImageBack')}
       />
+      <Separator />
+      <Button 
+      style={styles.btn}
+      title="Go to Modals"
+      onPress={()=> navigation.navigate('Modal')}
+      />
     </View>
   )
 };
