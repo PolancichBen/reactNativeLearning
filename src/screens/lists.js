@@ -37,16 +37,6 @@ const Lists = ({navigation}) => {
       keyExtractor={item => item.name}
       renderItem={renderItem}
       />
-      <Text>Below is a Section List</Text>
-      {/* {console.log(DATA)} */}
-      {/* <SectionList 
-      sections = {DATA}
-      keyExtractor = {(item,index) => item + index}
-      renderItem = {({item})=> <Item title={item.name}/>}
-      renderSectionHeader = {({ section: { name } }) => (
-      <Text>{name}</Text>
-      )}
-      /> */}
     </View>
   )
 };
