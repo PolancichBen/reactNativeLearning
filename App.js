@@ -11,6 +11,10 @@ import ScrollComp from './src/screens/scrollable';
 import Status from './src/screens/statusBars';
 import Switches from './src/screens/switch';
 import TextInputting from './src/screens/textInput';
+import TouchableHighlightExample from './src/screens/touchableHighlight';
+import TouchableOpacityComponent from './src/screens/touchableOpacity';
+import TouchableWithoutFeedbackComponent from './src/screens/touchableWithoutFeedback';
+import VirtualizedListExample from './src/screens/virtualizedListComponent';
 
 const navigator = createStackNavigator(
   {
@@ -25,6 +29,10 @@ const navigator = createStackNavigator(
     Status: Status,
     Switch: Switches,
     TextInput: TextInputting,
+    TouchableHighlight: TouchableHighlightExample,
+    TouchableOpacityComponent: TouchableOpacityComponent,
+    TouchableWithoutFeedbackComponent: TouchableWithoutFeedbackComponent,
+    VirtualizedListExample: VirtualizedListExample,
   },
   {
     initialRouteName: "Home",

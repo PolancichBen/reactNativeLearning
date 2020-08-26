@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, View, StyleSheet, Button } from "react-native";
+import { Text, View, StyleSheet, Button, ScrollView } from "react-native";
 
 const Separator = () => (
   <View style={styles.separator} />
@@ -8,6 +8,7 @@ const Separator = () => (
 const HomeScreen = ({navigation}) => {
   return (
     <View>
+      <ScrollView style={styles.scrollView}>
       <Text style={styles.text}>Select a Component</Text>
       <Button
       style={styles.btn}
@@ -68,6 +69,32 @@ const HomeScreen = ({navigation}) => {
       title="Go to Text Input"
       onPress={()=> navigation.navigate('TextInput')}
       />
+      <Separator />
+      <Button
+      style={styles.btn}
+      title="Go to Touchable Highlights"
+      onPress={()=> navigation.navigate('TouchableHighlight')}
+      />
+      <Separator />
+      <Button
+      style={styles.btn}
+      title="Go to the Touchable Opacity Component"
+      onPress={()=> navigation.navigate('TouchableOpacityComponent')}
+      />
+      <Separator />
+      <Button
+      style={styles.btn}
+      title="Go to the Touchable Without Feedback Component"
+      onPress={()=> navigation.navigate('TouchableWithoutFeedbackComponent')}
+      />
+      <Separator />
+      <Button
+      style={styles.btn}
+      title="Go to the Virtualized List Example"
+      onPress={()=> navigation.navigate('VirtualizedListExample')}
+      />
+      <Separator />
+      </ScrollView>
     </View>
   )
 };
@@ -80,6 +107,9 @@ const styles = StyleSheet.create({
   },
   separator: {
     marginVertical: 8,
+  },
+  scrollView: {
+    marginHorizontal: 20,
   },
 });
 
