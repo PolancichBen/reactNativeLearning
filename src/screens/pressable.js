@@ -1,7 +1,11 @@
 import React, { useState } from 'react';
-import { Pressable, StyleSheet, Text, View } from 'react-native';
+import { Pressable, StyleSheet, Text, View, Button } from 'react-native';
 
-const Press = () => {
+const Separator = () => (
+  <View style={styles.separator} />
+);
+
+const Press = ({navigation}) => {
   const [timesPressed, setTimesPressed] = useState(0);
 
   let textLog = '';
@@ -13,6 +17,11 @@ const Press = () => {
 
   return (
     <View>
+      <Button 
+      title="Go Home"
+      onPress={()=>navigation.navigate("Home")}
+      />
+      <Separator />
       <Pressable
         onPress={() => {
           setTimesPressed((current) => current + 1);
@@ -52,7 +61,10 @@ const styles = StyleSheet.create({
     borderWidth: StyleSheet.hairlineWidth,
     borderColor: '#f0f0f0',
     backgroundColor: '#f9f9f9'
-  }
+  },
+  separator: {
+    marginVertical: 20,
+  },
 });
 
 export default Press;
