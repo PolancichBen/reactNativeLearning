@@ -9,6 +9,7 @@ import PressableComponent from './src/screens/pressable.js';
 import Refresher from './src/screens/refresher';
 import ScrollComp from './src/screens/scrollable';
 import Status from './src/screens/statusBars';
+import Switches from './src/screens/switch';
 
 const navigator = createStackNavigator(
   {
@@ -21,6 +22,7 @@ const navigator = createStackNavigator(
     Refresh: Refresher,
     Scroll: ScrollComp,
     Status: Status,
+    Switch: Switches,
   },
   {
     initialRouteName: "Home",

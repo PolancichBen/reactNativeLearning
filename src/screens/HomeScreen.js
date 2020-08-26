@@ -56,6 +56,12 @@ const HomeScreen = ({navigation}) => {
       title="Go to Status Bars"
       onPress={()=> navigation.navigate('Status')}
       />
+      <Separator />
+      <Button
+      style={styles.btn}
+      title="Go to Switches"
+      onPress={()=> navigation.navigate('Switch')}
+      />
     </View>
   )
 };
