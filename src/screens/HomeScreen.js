@@ -43,7 +43,7 @@ const HomeScreen = ({navigation}) => {
       <Button
       style={styles.btn}
       title="Go to Pressable"
-      onPress={()=> navigation.navigate('PressableComp')}
+      onPress={()=> navigation.navigate('Press')}
       />
       <Separator />
       <Button

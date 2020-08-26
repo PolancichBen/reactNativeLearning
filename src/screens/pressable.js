@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { Pressable, StyleSheet, Text, View, Button } from 'react-native';
+import { Pressable, StyleSheet, Text, View } from 'react-native';
 
-const PressableComponent = ({ navigation }) => {
+const Press = () => {
   const [timesPressed, setTimesPressed] = useState(0);
 
   let textLog = '';
@@ -13,10 +13,6 @@ const PressableComponent = ({ navigation }) => {
 
   return (
     <View>
-      <Button
-        title="Go Home"
-        onPress={() => navigation.navigate("Home")}
-      />
       <Pressable
         onPress={() => {
           setTimesPressed((current) => current + 1);
@@ -36,9 +32,7 @@ const PressableComponent = ({ navigation }) => {
         )}
       </Pressable>
       <View style={styles.logBox}>
-        <Text testID="pressable_press_console">
-          {textLog}
-        </Text>
+        <Text testID="pressable_press_console">{textLog}</Text>
       </View>
     </View>
   );
@@ -61,4 +55,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default PressableComponent;
+export default Press;
