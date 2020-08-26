@@ -4,6 +4,7 @@ import HomeScreen from "./src/screens/HomeScreen";
 import Lists from "./src/screens/lists";
 import ImagesComponent from './src/screens/images';
 import ImagesBackground from './src/screens/imageBackground';
+import ActivityIndicatorComponent from './src/screens/activityIndicator';
 import Modals from './src/screens/modals';
 import PressableComponent from './src/screens/pressable.js';
 import Refresher from './src/screens/refresher';
@@ -33,6 +34,7 @@ const navigator = createStackNavigator(
     TouchableOpacityComponent: TouchableOpacityComponent,
     TouchableWithoutFeedbackComponent: TouchableWithoutFeedbackComponent,
     VirtualizedListExample: VirtualizedListExample,
+    ActivityIndicatorComponent: ActivityIndicatorComponent,
   },
   {
     initialRouteName: "Home",

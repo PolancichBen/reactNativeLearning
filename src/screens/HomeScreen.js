@@ -30,6 +30,12 @@ const HomeScreen = ({navigation}) => {
       <Separator />
       <Button 
       style={styles.btn}
+      title="Go to Activity Indicator Component"
+      onPress={()=> navigation.navigate('ActivityIndicatorComponent')}
+      />
+      <Separator />
+      <Button 
+      style={styles.btn}
       title="Go to Modals"
       onPress={()=> navigation.navigate('Modal')}
       />
