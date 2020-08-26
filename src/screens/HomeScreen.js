@@ -62,6 +62,12 @@ const HomeScreen = ({navigation}) => {
       title="Go to Switches"
       onPress={()=> navigation.navigate('Switch')}
       />
+      <Separator />
+      <Button
+      style={styles.btn}
+      title="Go to Text Input"
+      onPress={()=> navigation.navigate('TextInput')}
+      />
     </View>
   )
 };

@@ -10,6 +10,7 @@ import Refresher from './src/screens/refresher';
 import ScrollComp from './src/screens/scrollable';
 import Status from './src/screens/statusBars';
 import Switches from './src/screens/switch';
+import TextInputting from './src/screens/textInput';
 
 const navigator = createStackNavigator(
   {
@@ -23,6 +24,7 @@ const navigator = createStackNavigator(
     Scroll: ScrollComp,
     Status: Status,
     Switch: Switches,
+    TextInput: TextInputting,
   },
   {
     initialRouteName: "Home",
