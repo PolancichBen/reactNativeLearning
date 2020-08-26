@@ -6,7 +6,7 @@ import ImagesComponent from './src/screens/images';
 import ImagesBackground from './src/screens/imageBackground';
 import ActivityIndicatorComponent from './src/screens/activityIndicator';
 import Modals from './src/screens/modals';
-import Press from './src/screens/pressable';
+// import Press from './src/screens/pressable';
 import Refresher from './src/screens/refresher';
 import ScrollComp from './src/screens/scrollable';
 import Status from './src/screens/statusBars';
@@ -24,7 +24,7 @@ const navigator = createStackNavigator(
     Images: ImagesComponent,
     ImageBack: ImagesBackground,
     Modal: Modals,
-    Press: Press,
+    // Press: Press,
     Refresh: Refresher,
     Scroll: ScrollComp,
     Status: Status,

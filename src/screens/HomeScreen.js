@@ -39,12 +39,12 @@ const HomeScreen = ({navigation}) => {
       title="Go to Modals"
       onPress={()=> navigation.navigate('Modal')}
       />
-      <Separator />
+      {/* <Separator />
       <Button
       style={styles.btn}
-      title="Go to Pressable"
+      title="**** BROKEN PRESSABLE, DONT CLICK ****"
       onPress={()=> navigation.navigate('Press')}
-      />
+      /> */}
       <Separator />
       <Button
       style={styles.btn}
